@@ -1,0 +1,25 @@
+{% extends 'about_page/base.html' %}
+{% load static %}
+
+
+{% block title %}
+
+    <title>Luc134r | Portfolio</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="projects">
+        {% for project in projects %}
+        <div class="card border-secondary mb-3" style="max-width: 20rem;" id="card_project">
+            <div class="card-header"><a href="{{ project.link_project }}"> 🤖 GitHub - {{ project.title }} 🤖 </a></div>
+            <div class="card-body">
+                <h4 class="card-title">{{ project.title }}</h4>
+                <p class="card-text">{{ project.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
