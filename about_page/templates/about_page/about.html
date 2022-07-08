@@ -1,0 +1,68 @@
+{% extends 'about_page/base.html' %}
+{% load static %}
+
+{% block title %}
+
+    <title>Luc134r | About me</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="content_about_page">
+        <div id="about_me" class="mySlides fade">
+            <div class="text_about">
+                <h1 class="about_title"><span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='["About me."]'></span>
+                <h2 class="about_content">Hello! My name is Nikita.
+                    <br>For about 3 years I have been developing in the Python programming language.
+                    <br>I am engaged in non-commercial development as a hobby, development of chat bots for Telegram, VK, Discord, development of parsers and layout of landing pages.
+                    <br>Trying my hand at website design in Figma. </h2>
+            </div>
+        </div>
+        <div id="lang_tools" class="mySlides fade">
+            <div class="text_about">
+                <h1 class="lang_title"><span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='["Languages and tools."]'></span>
+                <h2 class="lang_content"><ul>
+                    <li>I have been developing in Python for about 3 years as a hobby. In the future, I want to find a job in the field of backend-development on Django.</li>
+                    <li>I know HTML5 at an intermediate level.</li>
+                    <li>Still learning CSS3 to improve my layout skills. Settled on preprocessors.</li>
+                    <li>I know JavaScript at an intermediate level. I use it both in layout and tried to write chat bots on Node.js</li>
+                    <li>I know SQL syntax well. Worked with such DBMS as: SQLite, MySQL, PostgreSQL, Firebird.</li>
+                    <li>I know how to work in Photoshop. Made layouts, edited photos and created logos.</li>
+                    <li>I master Figma to create layouts and further work with them for my own convenience.</li>
+                    <li>I know English at level A1. I improve my language skills every day. </li>
+                </ul></h2>
+            </div>
+        </div>
+        <div id="edication_block" class="mySlides fade">
+            <div class="text_about">
+                <h1 class="edication_title"><span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='["Edication."]'></span>
+                <h2 class="edication_content">I have a secondary vocational education - a technician-programmer. He studied at the multidisciplinary college at PSU in the city of Penza.
+                    <br>Graduated in 2021 with good grades. I graduated six months early thanks to the WorldSkills demo exam in mobile development, after which I defended my thesis.
+                    <br>In addition to specialized education, he received two additional qualifications: 
+                    <ul>
+                        <li>Computer's operator </li>
+                        <li>Development of mobile applications </li>
+                    </ul></h2>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+{% endblock %}
