@@ -1,0 +1,37 @@
+{% extends 'about_page/base.html' %}
+{% load static %}
+
+
+{% block title %}
+
+    <title>Luc134r | Portfolio</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="content_portfolio">
+        <div class="intro_portfolio">
+            <h1 class="portfolio_title"><span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='["Portfolio."]'></span>
+            </h1>
+        </div>
+        <div class="card_portfolio">
+            {% for project in projects %}
+                <div class="card">
+                    <div class="header_card">
+                        <a href="{{ project.link_project }}"><img src="{% static 'images/github_logo.png' %}" alt="git_logo"></a>
+                    </div>
+                    <div class="info">
+                        <h1 class="title">{{ project.title }}</h1>
+                        <h2>Description:</h2>
+                        <h3>{{ project.content }}</h3>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
