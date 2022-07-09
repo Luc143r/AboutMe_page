@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/adaptive.css' %}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="shake-slow">
+                <a href="/"><h1 class="logo"><span class="change">1</span><span class="change">4</span><span class="change">3</span></h1></a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="/about" class="link_nav">About me</a></li>
+                <li><a href="/portfolio" class="link_nav">Portfolio</a></li>
+                <li><a href="/contact" class="link_nav">Contact</a></li>
+                <li><a href="/future" class="link_nav">In the future</a></li>
+            </ul>
+            <a href="https://github.com/Luc143r" class="git_logo"><img src="{% static 'images/github_logo.png' %}" alt="git_logo"></a>
+        </header>
+
+        {% block content %}
+        {% endblock %}
+        
+        <footer>
+            <hr id="left_line">
+            <div class="image_logo_contact" class="shake-trigger">
+                <a href="https://www.instagram.com/rakova9opuxol/" class="link_contact"><img src="{% static 'images/instagram_logo.png' %}" alt="" class="shake-opacity" class="img_contact"></a>
+                <a href="https://t.me/insearchofmyself666" class="link_contact"><img src="{% static 'images/telegram_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
+                <a href="https://vk.com/luc143r" class="link_contact"><img src="{% static 'images/vk_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
+                <a href="https://discord.gg/XVtXuj6bxW" class="link_contact"><img src="{% static 'images/discord_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
+            </div>
+            <hr id="right_line">
+        </footer>
+    </div>
+
+    <script>
+        VANTA.WAVES({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x1b1b1b
+        })
+    </script>
+
+</body>
+</html>
