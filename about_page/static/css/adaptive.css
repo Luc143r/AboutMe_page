@@ -1,0 +1,22 @@
+@media (max-width: 1060px){
+
+    .nav_menu {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+
+    .image_logo_contact {
+        grid-template-columns: 25% 25%;
+        grid-template-rows: 25% 25%;
+    }
+    
+    .card_portfolio {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-gap: 5%;
+        font-size: 60%;
+    }
+
+    .first_text_intro {
+        font-size: 820%;
+    }
+}
