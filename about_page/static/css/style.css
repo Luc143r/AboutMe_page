@@ -7,7 +7,7 @@
 body {
     background-color: #3d3d3d;
     user-select: none;
-    height: 100%;
+    min-height: 100%;
 }
 
 a {
@@ -21,7 +21,6 @@ a {
 .wrapper {
     display: grid;
     min-height: 100vh;
-    grid-gap: 3%;
     grid-template-rows: auto minmax(auto, 1fr) auto;
 }
 
@@ -112,7 +111,7 @@ footer {
 }
 
 .content_about_page {
-    position: relative;
+    position: inherit;
     margin: auto;
 }
 
@@ -211,30 +210,29 @@ footer {
 }
 
 .card {
-    transform-style: preserve-3d;
-    min-height: 45vh;
-    width: 12vw;
+    transform-style: preserve-3d;;
+    min-height: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    text-align: center;
     border-radius: 30px;
-    padding: 0rem 4rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-}
-
-.card:hover {
-    height: 50vh;
-    width: 10vw;
-    font-size: 80%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    margin: 1%;
 }
 
 .content_portfolio {
-    display: grid;
-    grid-template-rows: 20% 80%;
+    min-width: 100%;
     text-align: center;
+    align-items: center;
 }
 
 .card_portfolio {
-    display: grid;
-    padding-left: 3%;
-    grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .portfolio_title {
@@ -411,6 +409,7 @@ footer {
     grid-template-rows: 40% 60%;
     text-align: center;
     align-items: center;
+    margin-bottom: 3%;
 }
 
 #title_future {
