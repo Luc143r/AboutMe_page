@@ -10,13 +10,60 @@
     }
     
     .card_portfolio {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 5%;
         font-size: 60%;
+    }
+
+    .card {
+        max-width: 350px;
     }
 
     .first_text_intro {
         font-size: 820%;
     }
+}
+
+@media (max-width: 955px){
+
+    #title_contact {
+        font-size: 600%;
+    }
+
+    .block_contact {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 750px){
+
+    .first_text_intro {
+        font-size: 116px;
+    }
+
+    .about_title {
+        font-size: 350%;
+    }
+    
+    .about_content {
+        font-size: 180%;
+    }
+    
+    .lang_title {
+        font-size: 350%;
+    }
+    
+    .lang_content {
+        font-size: 150%;
+    }
+    
+    .edication_title {
+        font-size: 400%;
+    }
+    
+    .edication_content {
+        font-size: 150%;
+    }
+
 }
