@@ -39,31 +39,47 @@
 @media (max-width: 750px){
 
     .first_text_intro {
-        font-size: 116px;
+        font-size: 100px;
     }
 
     .about_title {
-        font-size: 350%;
+        font-size: 300%;
     }
     
     .about_content {
-        font-size: 180%;
+        font-size: 120%;
     }
     
     .lang_title {
-        font-size: 350%;
+        font-size: 300%;
     }
     
     .lang_content {
-        font-size: 150%;
+        font-size: 120%;
     }
     
     .edication_title {
-        font-size: 400%;
+        font-size: 350%;
     }
     
     .edication_content {
-        font-size: 150%;
+        font-size: 120%;
+    }
+
+    #title_contact {
+        font-size: 550%;
+    }
+
+    .block_contact {
+        font-size: 60%;
+    }
+
+    #title_future {
+        font-size: 500%;
+    }
+
+    #content_future {
+        font-size: 220%;
     }
 
 }
