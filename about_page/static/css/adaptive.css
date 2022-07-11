@@ -315,7 +315,7 @@
     }
 
     .block_contact {
-        font-size: 48%;
+        font-size: 46%;
     }
 
     #title_future {
@@ -372,6 +372,13 @@
         font-size: 36px;
     }
 
+    #title_contact {
+        font-size: 400%;
+    }
+
+    .block_contact {
+        font-size: 40%;
+    }
 
     #title_future {
         font-size: 420%;
@@ -407,6 +414,14 @@
 
     #content_future {
         font-size: 140%;
+    }
+
+    #title_contact {
+        font-size: 400%;
+    }
+
+    .block_contact {
+        font-size: 38%;
     }
 
     .link_nav {
