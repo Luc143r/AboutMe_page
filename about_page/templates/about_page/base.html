@@ -31,7 +31,7 @@
     <div class="wrapper">
         <header>
             <div class="shake-slow">
-                <a href="/"><h1 class="logo"><span class="change">1</span><span class="change">4</span><span class="change">3</span></h1></a>
+                <a href="/" class="logo"><h1><span class="change">1</span><span class="change">4</span><span class="change">3</span></h1></a>
             </div>
             <ul class="nav_menu">
                 <li><a href="/about" class="link_nav">About me</a></li>
@@ -40,6 +40,19 @@
                 <li><a href="/future" class="link_nav">In the future</a></li>
             </ul>
             <a href="https://github.com/Luc143r" class="git_logo"><img src="{% static 'images/github_logo.png' %}" alt="git_logo"></a>
+            <div class="menu_button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <nav>
+                    <li><a href="/about" class="link_nav">About me</a></li>
+                    <li><a href="/portfolio" class="link_nav">Portfolio</a></li>
+                    <li><a href="/contact" class="link_nav">Contact</a></li>
+                    <li><a href="/future" class="link_nav">In the future</a></li>
+                </nav>
+            </div>
         </header>
 
         {% block content %}
@@ -48,14 +61,22 @@
         <footer>
             <hr id="left_line">
             <div class="image_logo_contact" class="shake-trigger">
-                <a href="https://www.instagram.com/rakova9opuxol/" class="link_contact"><img src="{% static 'images/instagram_logo.png' %}" alt="" class="shake-opacity" class="img_contact"></a>
-                <a href="https://t.me/insearchofmyself666" class="link_contact"><img src="{% static 'images/telegram_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
-                <a href="https://vk.com/luc143r" class="link_contact"><img src="{% static 'images/vk_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
-                <a href="https://discord.gg/XVtXuj6bxW" class="link_contact"><img src="{% static 'images/discord_logo.png' %}" alt="" class="shake-opacity"  class="img_contact"></a>
+                <a href="https://www.instagram.com/rakova9opuxol/" class="link_contact"><img src="{% static 'images/instagram_logo.png' %}" alt="" class="shake-opacity" id="img_contact"></a>
+                <a href="https://t.me/insearchofmyself666" class="link_contact"><img src="{% static 'images/telegram_logo.png' %}" alt="" class="shake-opacity"  id="img_contact"></a>
+                <a href="https://vk.com/luc143r" class="link_contact"><img src="{% static 'images/vk_logo.png' %}" alt="" class="shake-opacity"  id="img_contact"></a>
+                <a href="https://discord.gg/XVtXuj6bxW" class="link_contact"><img src="{% static 'images/discord_logo.png' %}" alt="" class="shake-opacity"  id="img_contact"></a>
             </div>
             <hr id="right_line">
         </footer>
     </div>
+
+    <script>
+        let menuBtn = document.querySelector('.menu_button');
+        let menu = document.querySelector('.menu');
+        menuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
 
     <script>
         VANTA.WAVES({
